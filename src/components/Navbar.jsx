@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 export class Navbar extends Component {
-
   render() {
     return (
       <>
@@ -32,7 +31,6 @@ export class Navbar extends Component {
               </strong>
             </Link>
 
-            
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ">
                 <li className="nav-item">
@@ -46,7 +44,11 @@ export class Navbar extends Component {
                 </li>
 
                 <li className="nav-item">
-                  <Link className="nav-link fs-5" aria-current="page" to="/about">
+                  <Link
+                    className="nav-link fs-5"
+                    aria-current="page"
+                    to="/about"
+                  >
                     About
                   </Link>
                 </li>
@@ -57,27 +59,35 @@ export class Navbar extends Component {
                 >
                   <ul className="navbar-nav">
                     <li className="nav-item dropdown">
-                      <li
-                        className="nav-link dropdown-toggle fs-5" id="navbarDarkDropdownMenuLink"
+                      <span
+                        className="nav-link dropdown-toggle fs-5"
+                        id="navbarDarkDropdownMenuLink"
                         role="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
                       >
                         categories
-                      </li>
-                      <ul className="dropdown-menu dropdown-menu-dark bg-danger" aria-labelledby="navbarDarkDropdownMenuLink">
+                      </span>
+                      <ul
+                        className="dropdown-menu dropdown-menu-dark bg-danger"
+                        aria-labelledby="navbarDarkDropdownMenuLink"
+                      >
                         <li>
-                          <Link className="dropdown-item" to="/"  role="button">
+                          <Link className="dropdown-item" to="/" role="button">
                             General
                           </Link>
                         </li>
                         <li>
-                          <Link className="dropdown-item" to="/news/science"  role="button">
+                          <Link
+                            className="dropdown-item"
+                            to="/news/science"
+                            role="button"
+                          >
                             Science
                           </Link>
                         </li>
                         <li>
-                          <Link className="dropdown-item" to="/news/business" >
+                          <Link className="dropdown-item" to="/news/business">
                             Business
                           </Link>
                         </li>
@@ -92,7 +102,10 @@ export class Navbar extends Component {
                           </Link>
                         </li>
                         <li>
-                          <Link className="dropdown-item" to="/news/entertainment" >
+                          <Link
+                            className="dropdown-item"
+                            to="/news/entertainment"
+                          >
                             Entertainment
                           </Link>
                         </li>
@@ -102,7 +115,6 @@ export class Navbar extends Component {
                 </div>
               </ul>
             </div>
-
 
             <form className="d-flex " role="search">
               <div className="row">
